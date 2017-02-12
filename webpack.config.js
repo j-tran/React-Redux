@@ -1,22 +1,22 @@
 module.exports = {
   entry: [
-    './src/index.js'
+    './src/index.js',
   ],
   output: {
     path: __dirname,
     publicPath: '/',
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   module: {
     loaders: [{
       exclude: /node_modules/,
-      loader: 'babel'
-    }]
+      loader: 'babel',
+    }],
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx'],
   },
   devServer: {
-    contentBase: './'
-  }
+    contentBase: './',
+  },
 };

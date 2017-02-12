@@ -1,0 +1,13 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+  },
+  "plugins": [
+    "import"
+  ],
+  "rules": {
+    "arrow-body-style": ["error", "as-needed"],
+  }
+}
