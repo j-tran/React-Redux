@@ -32,7 +32,6 @@ class App extends Component {
     /* videoSearch becomes a new function that throttles our search input
     Is used by SearchBar component */
     const videoSearch = _.debounce((term) => { this.videoSearch(term); }, 300);
-    console.log(videoSearch);
     return (
       <div>
         <SearchBar onSearchTermChange={videoSearch} />
